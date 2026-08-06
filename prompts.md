@@ -13,3 +13,6 @@ Divide the interface into different sections: a header, a container holding an e
 Clicking the "draw" button should display the winner's name with a cake and party emoji. Use a vibrant color scheme such as `#ff4081` for the header background color and complementary colors for the button states. 
 
 I want you to make the CSS and JavaScript code easy to understand, even for non-coders. Remember to add code comments above each CSS rule and each line of JavaScript.
+
+## Prompt 3
+Please use Google Material Icons to add a cake icon inside the <h1>.

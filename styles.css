@@ -31,9 +31,15 @@ form {
   margin-bottom: 20px;
 }
 
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
 label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"] {
@@ -41,9 +47,10 @@ input[type="text"] {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 
-button[type="submit"], #draw-button {
+button[type="submit"], #draw-button, #reset-button {
   width: 100%;
   padding: 8px;
   background-color: #ff4081;
@@ -53,6 +60,14 @@ button[type="submit"], #draw-button {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s;
+}
+
+#reset-button {
+  background-color: #007bff;
+}
+
+#reset-button:hover {
+  background-color: #1367c0;
 }
 
 button[type="submit"]:hover, #draw-button:hover {

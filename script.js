@@ -3,6 +3,7 @@ const form = document.getElementById('entry-form');
 const nameInput = document.getElementById('name');
 const participantsList = document.getElementById('participants-list');
 const drawButton = document.getElementById('draw-button');
+const resetButton = document.getElementById('reset-button');
 const winnerDisplay = document.getElementById('winner-display');
 
 // Array to store participant names
@@ -36,4 +37,10 @@ drawButton.addEventListener('click', function() {
     // Display the winner's name with emojis
     winnerDisplay.innerHTML = `<p>🎉 Winner: ${winner} 🍰</p>`;
   }
+});
+
+resetButton.addEventListener('click', function() {
+  winnerDisplay.innerHTML = ''; 
+  participantsList.innerHTML = '';
+  participants.length = 0;
 });
